@@ -1,0 +1,48 @@
+
+.menu{
+    display: flex;
+
+
+}
+
+.menu :hover {
+    background: rebeccapurple;
+    transition: 0.3s;
+}
+
+.menu li{
+    width: 200px;
+    list-style: none;
+    background: black;
+    position: relative;
+}
+
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+
+}
+
+.menu ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+    padding: 0;
+}
+
+.menu li:hover > ul {
+    display: block;
+
+}
+
+.menu ul ul {
+    display: none;
+    top: 0;
+    left: 100%;
+}
